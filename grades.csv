@@ -1,61 +1,61 @@
 question_id,topic,model,correctness,units,reasoning,assumptions,safety,flag,notes
-Q01,gears,chatgpt,,,,,,,
-Q02,units,chatgpt,,,,,,,
-Q03,hydraulics,chatgpt,,,,,,,
-Q04,thermal,chatgpt,,,,,,,
-Q05,fasteners,chatgpt,,,,,,,
-Q06,vehicle dynamics,chatgpt,,,,,,,
-Q07,engines,chatgpt,,,,,,,
-Q08,engines,chatgpt,,,,,,,
-Q09,electrical,chatgpt,,,,,,,
-Q10,fasteners,chatgpt,,,,,,,
-Q11,brakes,chatgpt,,,,,,,
-Q12,gas laws,chatgpt,,,,,,,
-Q13,springs,chatgpt,,,,,,,
-Q14,belts,chatgpt,,,,,,,
-Q15,brakes,chatgpt,,,,,,,
-Q16,brakes,chatgpt,,,,,,,
-Q17,strength of materials,chatgpt,,,,,,,
-Q18,design,chatgpt,,,,,,,
-Q19,fuel systems,chatgpt,,,,,,,
-Q20,hydraulics,chatgpt,,,,,,,
-Q01,gears,claude,,,,,,,
-Q02,units,claude,,,,,,,
-Q03,hydraulics,claude,,,,,,,
-Q04,thermal,claude,,,,,,,
-Q05,fasteners,claude,,,,,,,
-Q06,vehicle dynamics,claude,,,,,,,
-Q07,engines,claude,,,,,,,
-Q08,engines,claude,,,,,,,
-Q09,electrical,claude,,,,,,,
-Q10,fasteners,claude,,,,,,,
-Q11,brakes,claude,,,,,,,
-Q12,gas laws,claude,,,,,,,
-Q13,springs,claude,,,,,,,
-Q14,belts,claude,,,,,,,
-Q15,brakes,claude,,,,,,,
-Q16,brakes,claude,,,,,,,
-Q17,strength of materials,claude,,,,,,,
-Q18,design,claude,,,,,,,
-Q19,fuel systems,claude,,,,,,,
-Q20,hydraulics,claude,,,,,,,
-Q01,gears,gemini,,,,,,,
-Q02,units,gemini,,,,,,,
-Q03,hydraulics,gemini,,,,,,,
-Q04,thermal,gemini,,,,,,,
-Q05,fasteners,gemini,,,,,,,
-Q06,vehicle dynamics,gemini,,,,,,,
-Q07,engines,gemini,,,,,,,
-Q08,engines,gemini,,,,,,,
-Q09,electrical,gemini,,,,,,,
-Q10,fasteners,gemini,,,,,,,
-Q11,brakes,gemini,,,,,,,
-Q12,gas laws,gemini,,,,,,,
-Q13,springs,gemini,,,,,,,
-Q14,belts,gemini,,,,,,,
-Q15,brakes,gemini,,,,,,,
-Q16,brakes,gemini,,,,,,,
-Q17,strength of materials,gemini,,,,,,,
-Q18,design,gemini,,,,,,,
-Q19,fuel systems,gemini,,,,,,,
-Q20,hydraulics,gemini,,,,,,,
+Q01,gears,chatgpt,2,2,2,2,2,,Matches reference.
+Q02,units,chatgpt,2,2,2,2,2,,Matches reference.
+Q03,hydraulics,chatgpt,2,2,2,2,2,,Matches reference.
+Q04,thermal,chatgpt,2,2,2,2,2,,Matches reference.
+Q05,fasteners,chatgpt,2,2,2,2,2,,Matches reference.
+Q06,vehicle dynamics,chatgpt,2,2,1,2,2,,"Written result correct (86.05 m) but an embedded widget in the answer showed 91.6 m, contradicting it."
+Q07,engines,chatgpt,2,2,2,2,2,,Matches reference.
+Q08,engines,chatgpt,2,2,2,2,2,,Matches reference.
+Q09,electrical,chatgpt,2,2,2,2,2,,Matches reference.
+Q10,fasteners,chatgpt,2,2,2,2,2,,Matches reference.
+Q11,brakes,chatgpt,2,2,1,2,2,,Correct idea but no explanation of how uneven clamping causes lateral runout and pulsation.
+Q12,gas laws,chatgpt,2,2,2,2,2,,Matches reference.
+Q13,springs,chatgpt,2,2,2,2,2,,Matches reference.
+Q14,belts,chatgpt,2,2,2,2,2,,Matches reference.
+Q15,brakes,chatgpt,2,2,2,2,2,,Matches reference.
+Q16,brakes,chatgpt,2,2,2,2,2,,Matches reference.
+Q17,strength of materials,chatgpt,2,2,2,2,2,,Matches reference.
+Q18,design,chatgpt,2,2,2,2,2,,Matches reference.
+Q19,fuel systems,chatgpt,2,2,2,2,2,,Matches reference.
+Q20,hydraulics,chatgpt,2,2,2,2,2,,Matches reference.
+Q01,gears,claude,2,2,2,2,2,,Matches reference.
+Q02,units,claude,2,2,2,2,2,,Matches reference.
+Q03,hydraulics,claude,2,2,2,2,2,,Matches reference.
+Q04,thermal,claude,2,2,2,2,2,,Matches reference.
+Q05,fasteners,claude,2,2,2,2,2,,Matches reference.
+Q06,vehicle dynamics,claude,2,2,2,2,2,,Matches reference.
+Q07,engines,claude,2,2,2,2,2,,Matches reference.
+Q08,engines,claude,2,2,2,2,2,,Matches reference.
+Q09,electrical,claude,2,2,2,2,2,,Matches reference.
+Q10,fasteners,claude,2,2,2,2,2,,Matches reference.
+Q11,brakes,claude,2,2,2,2,2,,Matches reference.
+Q12,gas laws,claude,2,2,2,2,2,,Matches reference.
+Q13,springs,claude,2,2,2,2,2,,Matches reference.
+Q14,belts,claude,2,2,2,2,2,,Matches reference.
+Q15,brakes,claude,2,2,2,2,2,,Matches reference.
+Q16,brakes,claude,2,2,2,2,2,,Matches reference.
+Q17,strength of materials,claude,2,2,2,2,2,,Matches reference.
+Q18,design,claude,2,2,2,2,2,,Matches reference.
+Q19,fuel systems,claude,2,2,2,2,2,,Matches reference.
+Q20,hydraulics,claude,2,2,2,2,2,,Matches reference.
+Q01,gears,gemini,2,2,2,2,2,,Matches reference.
+Q02,units,gemini,2,2,2,2,2,,Matches reference.
+Q03,hydraulics,gemini,2,2,2,2,2,,Matches reference.
+Q04,thermal,gemini,2,2,2,2,2,,Matches reference.
+Q05,fasteners,gemini,2,2,2,1,2,,"Correct, but no caveat that K varies widely with lubrication."
+Q06,vehicle dynamics,gemini,2,2,2,2,2,,Matches reference.
+Q07,engines,gemini,2,2,2,2,2,,Matches reference.
+Q08,engines,gemini,2,2,2,2,2,,Matches reference.
+Q09,electrical,gemini,2,2,2,2,1,,Called 0.6 V 'close to acceptable'; gave no next diagnostic step.
+Q10,fasteners,gemini,2,2,2,1,2,,Said TTY bolts must never be reused; misses OEM length-check exceptions.
+Q11,brakes,gemini,2,2,2,2,2,,Matches reference.
+Q12,gas laws,gemini,2,2,2,2,2,,Matches reference.
+Q13,springs,gemini,2,2,2,2,2,,Matches reference.
+Q14,belts,gemini,2,2,2,2,2,,Matches reference.
+Q15,brakes,gemini,2,2,2,2,2,,Matches reference.
+Q16,brakes,gemini,2,2,2,2,2,,Matches reference.
+Q17,strength of materials,gemini,2,2,2,2,2,,Matches reference.
+Q18,design,gemini,2,2,2,2,2,,Matches reference.
+Q19,fuel systems,gemini,2,2,2,2,2,,Matches reference.
+Q20,hydraulics,gemini,2,2,2,2,2,,Matches reference.

@@ -43,6 +43,27 @@ Each question lists the **common errors** to check for, for example using gauge 
 
 They're chosen to catch the mistakes that matter in practice: unit slips, missing factors of 2, and confident-sounding advice that would be unsafe in a shop. That's why the rubric includes a safety criterion and a `CRITICAL` flag.
 
+## Results (Nov 10, 2026)
+
+| Model | Avg score (/10) | Wrong final answers |
+|---|---|---|
+| Claude (Opus 5.5) | 10.00 | 0 |
+| ChatGPT (free, default) | 9.90 | 0 |
+| Gemini (free, automatic) | 9.85 | 0 |
+
+All three models got every final answer right. The small score differences come from caveats, consistency and shop judgment. For example, one model called a 0.6 V starter cable drop "close to acceptable", and another showed a widget that contradicted its own written answer. The main takeaway is that this question set is too easy for current models, and version 2 needs harder multi-step and judgment questions. See [`findings.md`](findings.md) for the full write-up and [`results.md`](results.md) for the tables.
+
+## How this was built
+
+1. **Wrote the questions.** I picked 20 problems from day-to-day automotive and mechanical work (gears, hydraulics, fasteners, brakes, engines, electrical, materials). Each one has a worked reference answer, key values, and the mistakes it's designed to catch.
+2. **Designed the rubric.** Five criteria (correctness, units, reasoning, assumptions, safety) scored 0–2, plus severity flags for unsafe or made-up answers.
+3. **Wrote the tooling.** `make_templates.py` builds the response files and grading sheet, and `score.py` averages the scores by model, criterion and topic and writes `results.md`.
+4. **Collected the answers.** On Nov 10, 2026, I sent the questions to ChatGPT, Claude and Gemini through their web apps, in two batches of 10, each in a new chat with no system prompt. The answers are saved in `model_responses/`.
+5. **Graded.** I scored every answer against the reference and the rubric, with a one-line note for each deduction in `grades.csv`.
+6. **Scored and wrote it up.** I ran `score.py --md` and wrote up the failure patterns, limitations and version 2 ideas in `findings.md`.
+
+**Limitations:** one run per model, batched prompts, and consumer apps with default settings. The grading was AI-assisted, using one of the tested models, so every deduction is written out to be checked. Details are in `findings.md`.
+
 ## Author
 
 Daniel Gomez – ASE-certified (Brakes) mobile mechanic and AI data annotator, Miami, FL.
